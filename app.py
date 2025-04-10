@@ -8,7 +8,61 @@ def  home():
         #Creación de la estructura html de la calculadora
         #Su funcionamiento será hecho con javascript
     return """
-    <center>
+
+    <style>
+    
+        body{
+        
+            background: #0C0F1D;
+
+        }
+        #estilo{
+        
+            background: #121212;
+            color: #50C878;
+            border: 3px solid black;
+            border-radius: 8px;
+            margin: auto;
+            margin-top: 11%;
+            justify-content: center;
+            top: 20%;
+            text-align: center;
+            width: 30%;
+
+        }
+
+        input,select{
+
+            background: transparent !important;
+            border: 1px solid #50C878 !important;
+            color: #50C878;
+
+        }
+
+        select option{
+
+            background: transparent !important;
+            border: 1px solid #50C878;
+            color: black;
+
+        }
+
+        button {
+
+          background: transparent;
+          border: 1px solid #50C878;
+          color: #50C878;
+
+        }
+
+        button:hover {
+
+          background: #2D3748;
+
+        }
+
+    </style>
+    <div id="estilo">
 
         <h1>Calculadora</h1>
         <label for ='n1'> Número 1: </label>
@@ -26,8 +80,10 @@ def  home():
         </select>
         <br><br>
         <button onclick="operar()">Realizar operación</button>
-        <br><br><br><br>
-        <h3 id="resultado"></h3></center>
+        <br><br><br>
+        <h3 id="resultado"></h3>
+        <br>
+    </div>
 
    
         <script>
