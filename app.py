@@ -44,7 +44,24 @@ def  home():
                 alert(suma)
 
             }
+            if (operacion=="-"){
             
+                const resta=Number(numero1)-Number(numero2);
+                alert(resta)
+
+            }
+            if (operacion=="*"){
+            
+                const multiplicacion=Number(numero1)*Number(numero2);
+                alert(multiplicacion)
+
+            }
+            if (operacion=="/"){
+            
+                const division=Number(numero1)/Number(numero2);
+                alert(division)
+
+            }
         }
 
         </script>
